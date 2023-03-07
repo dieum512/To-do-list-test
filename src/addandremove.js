@@ -21,7 +21,7 @@ export const clearCompleted = () => {
     localStorage.setItem('List', JSON.stringify(filteredCompletedTask));
     location.reload();
   });
-}
+};
 
 export const addTodo = () => {
   form.addEventListener('submit', () => {
@@ -39,7 +39,7 @@ export const addTodo = () => {
     }
     input.value = '';
   });
-}
+};
 
 export const editTask = () => {
   editFormArr.forEach((form) => {
@@ -57,7 +57,7 @@ export const editTask = () => {
       });
     });
   });
-}
+};
 
 export const removeElement = (task, trash) => {
   const tasks = Array.from(task);
@@ -86,4 +86,4 @@ export const removeElement = (task, trash) => {
       }
     });
   });
-}
+};

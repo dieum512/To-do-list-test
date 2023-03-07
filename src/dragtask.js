@@ -36,4 +36,4 @@ export const dragDrop = () => {
     }
     list.insertBefore(draggable, afterElement);
   });
-}
+};
