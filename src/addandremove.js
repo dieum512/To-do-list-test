@@ -9,7 +9,7 @@ import {
   editFormArr,
 } from './index.js';
 
-export function clearCompleted() {
+export const clearCompleted = () => {
   clear.addEventListener('click', () => {
     const newArr = JSON.parse(localStorage.getItem('List')) || [];
     const filteredCompletedTask = newArr.filter(
@@ -23,7 +23,7 @@ export function clearCompleted() {
   });
 }
 
-export function addTodo() {
+export const addTodo = () => {
   form.addEventListener('submit', () => {
     const input = document.querySelector('.addlist');
 
@@ -41,7 +41,7 @@ export function addTodo() {
   });
 }
 
-export function editTask() {
+export const editTask = () => {
   editFormArr.forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -59,7 +59,7 @@ export function editTask() {
   });
 }
 
-export function removeElement(task, trash) {
+export const removeElement = (task, trash) => {
   const tasks = Array.from(task);
   tasks.forEach((task) => {
     task.addEventListener('click', () => {

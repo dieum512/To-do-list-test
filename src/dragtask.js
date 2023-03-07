@@ -2,7 +2,7 @@
 /* eslint-disable import/prefer-default-export */
 import { task, list } from './index.js';
 
-export function dragDrop() {
+export const dragDrop = () => {
   function dragAfterElement(listContainer, y) {
     const draggableElements = [...listContainer.querySelectorAll('.item:not(.dragging)')];
 
