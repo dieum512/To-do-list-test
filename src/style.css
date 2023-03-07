@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url(../Images/bankground-1.jpg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.container-div {
+  padding: 10%;
+}
+
+/* title */
+h1 {
+  color: #042c0f;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.to-do-div {
+  background-color: #fff;
+  opacity: 0.8;
+  margin-top: 50px;
+}
+
+/* header */
+.to-do-header {
+  background-color: #042c0f;
+  padding: 8px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.to-do-header h3 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.to-do-header a {
+  color: #fff;
+}
+
+/* form */
+#form {
+  padding: 8px 5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #585858;
+}
+
+input {
+  border: none;
+}
+
+.to-do-list .item {
+  padding: 8px 5%;
+  border-bottom: 1px solid #585858;
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-do-list .item .check {
+  display: flex;
+  gap: 10px;
+}
+
+.clear-btn {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: #040424;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* Desktop version */
+
+@media (min-width: 768px) {
+  body {
+    background-size: cover;
+  }
+
+  .container-div {
+    padding: 8% 23%;
+  }
+
+  h1 {
+    color: #bd460f;
+    font-size: 60px;
+  }
+
+  /* header */
+  .to-do-header {
+    padding: 12px 5%;
+  }
+
+  .to-do-header h3 {
+    font-size: 31px;
+  }
+}
