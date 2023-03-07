@@ -8,7 +8,7 @@ export const update = () => {
     checktodo.addEventListener('click', (e) => {
       const parent = e.target.parentElement;
 
-      const editinput = parent.querySelector('.text');
+      const editInput = parent.querySelector('.text');
 
       const list = JSON.parse(localStorage.getItem('List'));
 
@@ -16,11 +16,11 @@ export const update = () => {
       if (e.target.checked) {
         list[index].completed = true;
         localStorage.setItem('List', JSON.stringify(list));
-        editinput.style.textDecoration = 'line-through';
+        editInput.style.textDecoration = 'line-through';
       } else {
         list[index].completed = false;
         localStorage.setItem('List', JSON.stringify(list));
-        editinput.style.textDecoration = 'none';
+        editInput.style.textDecoration = 'none';
       }
     });
   });
